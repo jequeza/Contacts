@@ -116,8 +116,8 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="0nY-g4-DC2"/>
                                         </connections>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRB-sX-KYp">
-                                        <rect key="frame" x="127" y="692" width="433" height="200"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRB-sX-KYp">
+                                        <rect key="frame" x="98" y="692" width="374" height="188"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="433" id="8Da-cT-ieU"/>
@@ -125,6 +125,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="hBY-Kv-tvt"/>
+                                        </connections>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-Rw-RZf">
                                         <rect key="frame" x="127" y="654" width="34" height="30"/>
@@ -170,6 +173,9 @@
                                     <constraint firstItem="cQk-gr-vK9" firstAttribute="leading" secondItem="Eh1-Jl-sav" secondAttribute="leading" id="m3h-F6-keQ"/>
                                     <constraint firstItem="cQk-gr-vK9" firstAttribute="top" secondItem="IGb-QK-4lP" secondAttribute="bottom" constant="8" symbolic="YES" id="quP-2p-Slb"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pbg-FR-TP2"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

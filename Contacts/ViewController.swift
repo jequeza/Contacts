@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         if (txtFirst.text=="" || txtLast.text=="" || txtEmail.text=="" || txtAddress.text=="" || txtZip.text=="" || txtState.text=="" || txtCity.text=="" || txtPhone.text=="")
         {
             //Call MessageBox if any fields are empty
-            MsgBox("All fields required, please correct")
+           MsgBox("All fields required, please correct")
         }
         else
         {
@@ -119,7 +119,7 @@ class ViewController: UIViewController {
         }
         
     
-        
+    }
         
     
     
@@ -138,7 +138,7 @@ class ViewController: UIViewController {
     
     
     // 2) Add touchesBegan function to catch screen tap and resign keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
        
         //forces resign first responder and hides keyboard
         txtFirst.endEditing(true)
@@ -226,8 +226,7 @@ class ViewController: UIViewController {
         ScrollView.frame = CGRect(x:0, y:50, width:size.width, height:size.height)
         //Set focus on txtFirst
         txtFirst.becomeFirstResponder()
-        }
-        
+
     }
     
     
